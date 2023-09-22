@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+select {
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.mr-2{
+    margin-right: 2rem;
+}
+
+input[type="text"],
+input[type ="email"],
+input[type ="tel"],
+input[type ="date"],
+input[type ="file"],
+select,
+textarea
+{
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+    color: #333;
+}
+
+input[type="radio"]{
+    width: 1.0rem;
+    height: 1.0rem;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: 0;
+    box-shadow: 0 0 3px #ababab;
+}
+
+form {
+    background-color: #fff;
+    box-shadow: 0 0 3px #ababab;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: .3rem;
+}

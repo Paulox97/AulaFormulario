@@ -10,39 +10,81 @@
     <section>
         <h1>Preencha o formulário para fazer a sua reserva</h1>
          <form action="#" method="post">  <!-- sempre que fazemos formulário usamos o form  -->
-            <div>
+            <div class="flex flex-column mb-2">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome">
+                <input type="text" name="nome" id="nome" required placeholder="">
             </div>
-            <div>
-                <div>
+            <div class="flex mb-2">
+                <div class="flex flex-column w-100 mr-2">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email">
                 </div>
-                <div>
+                <div class="flex flex-column w-100">
                     <label for="dataNasc">Data de Nascimento</label>
                     <input type="date" name="dataNasc" id="dataNasc">
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="flex mb-2">
+                <div class="flex flex-column w-100 mr-2">
                     <label for="cpf">CPF</label>
                     <input type="text" name="cpf" id="cpf">
                 </div>
-                <div>
+                <div class="flex flex-column w-100 mr-2">
                     <label for="rg">RG</label>
                     <input type="text" name="rg" id="rg">
                 </div>
-                <div>
+                <div class="flex flex-column w-100">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" name="tel" id="telefone">
-                </div>
-                <div>
-                    <label for="">Tipo</label>
-                    <input type="radio">
+                    <input type="tel" name="tel" id="telefone" pattern="(\(\d{2}\)\s\d{4,5}-\d{4})">
                 </div>
             </div>
-            <div>
+            <div class="flex flex-column mb-2">
+                <div class="flex">
+                    <label>Tipo</label>
+                </div>
+                <divc class="flex">
+                    <div class="flex mr-2">
+                        <input type="radio" name="tipo" id="economico" value="economico">
+                        <label for="economico">Econômico</label>
+                    </div>
+                    <div class="flex mr-2">
+                        <input type="radio" name="tipo" id="padrao" value="padrao">
+                        <label for="padrao">Padrão</label>
+                    </div>
+                    <div class="flex mr-2">
+                        <input type="radio" name="tipo" id="luxo" value="luxo">
+                        <label for="luxo">Luxo</label>
+                    </div>
+                </divc>
+            </div>
+            <div class="flex mb-2">
+                <div class="flex flex-column mr-2">
+                    <label>Adultos</label>
+                    <select name="adultos" id="adultos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="flex flex-column">
+                    <label>Crianças</label>
+                    <select name="criancas" id="criancas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex flex-column mb-2">
+                <label for="obs">Observação</label>
+                <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+            </div>
+            <div class="flex flex-column mb-2">
+                <label for="">Envie um anexo</label>
+                <input type="file" id="file" name="file">
+            </div>
+            </div>
+            <div class="flex">
                 <input type="submit" value="Enviar">
             </div>
         </form>
